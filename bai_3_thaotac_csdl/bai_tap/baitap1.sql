@@ -23,4 +23,4 @@ from Student s join mark m
 on s.StudentID = m.StudentID
 join `Subject` sub
 on sub.subId = m.subId
-ORDER BY m.Mark DESC;
+ORDER BY m.Mark DESC,s.StudentName;
