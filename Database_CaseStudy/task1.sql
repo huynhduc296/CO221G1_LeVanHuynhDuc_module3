@@ -50,7 +50,13 @@ value
 	(1,'Cao Van Minh', '1992-10-17', '208856459','0333765651', 'minh_cao@gmail.com', 'Cao Bang' ),
 	(3,'Nguyen Dang Khoi', '1998-08-24', '218846561', '0917063678', 'khoi_nguyen@gmail.com', 'Da Nang' );
     
-
+ insert into khach_hang(id_loai_khach_hang,name_khach_hang, ngay_sinh, so_cmnd, so_dien_thoai, email ,dia_chi)
+ value
+	(1,'Quan', '1998-06-12', '208872125', '0333576575', '123@gmail.com', 'Quang Tri' ), 
+    (1,'Hiep', '1999-05-20', '208872125', '0333576575', 'ddwd@gmail.com', 'Vinh' ), 
+    (1,'Tu', '2000-06-25', '208872125', '0333576575', 'wdww@gmail.com', 'vinh' );
+    
+    
 insert into loai_dich_vu(name_loai_dich_vu)
 value
 	('Villa'),
@@ -80,9 +86,17 @@ value
 insert into hop_dong(id_nhan_vien,id_khach_hang,id_dich_vu,ngay_lam_hop_dong, ngay_het_hop_dong, tien_dat_coc,tong_tien)
 value
 	(1,1,2,'2015-10-16', '2015-01-28', 150000, 1000000);
-    insert into hop_dong(id_nhan_vien,id_khach_hang,id_dich_vu,ngay_lam_hop_dong, ngay_het_hop_dong, tien_dat_coc,tong_tien)
-value
+insert into hop_dong(id_nhan_vien,id_khach_hang,id_dich_vu,ngay_lam_hop_dong, ngay_het_hop_dong, tien_dat_coc,tong_tien)
+	value
 	(1,1,2,'2019-02-16', '2019-03-28', 150000, 1000000);
+insert into hop_dong(id_nhan_vien,id_khach_hang,id_dich_vu,ngay_lam_hop_dong, ngay_het_hop_dong, tien_dat_coc,tong_tien)
+	value
+	(1,1,2,'2018-02-16', '2019-03-28', 150000, 1000000),
+    (2,1,2,'2018-05-16', '2020-03-28', 150000, 1000000);
+insert into hop_dong(id_nhan_vien,id_khach_hang,id_dich_vu,ngay_lam_hop_dong, ngay_het_hop_dong, tien_dat_coc,tong_tien)
+	value
+	(1,1,3,'2018-02-16', '2019-03-28', 150000, 1000000),
+    (2,1,1,'2018-05-16', '2020-03-28', 150000, 1000000);
 insert into dich_vu_di_kem( name_dich_vu_di_kem, gia_ban, don_vi, trang_thai_kha_dung)
 value
 	('Karaoke',100000.00,1, 'Availabale'),
