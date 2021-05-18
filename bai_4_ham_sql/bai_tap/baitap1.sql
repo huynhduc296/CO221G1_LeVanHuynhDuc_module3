@@ -1,20 +1,22 @@
 -- Hiển thị tất cả các thông tin môn học (bảng subject) có credit lớn nhất.
 
 use QuanLySinhVien;
-select *,MAX(credit)
+select *
 from `subject` s
 where s.credit = all (select max(credit)
 from `subject` 
 )
 -- Hiển thị các thông tin môn học có điểm thi lớn nhất.
-use QuanLySinhVien;
-select *,MAX(credit)
+
+select *
 from `subject` s
 where s.credit = all (select max(credit)
 from `subject` 
 )
 -- Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên, xếp hạng theo thứ tự điểm giảm dần
-SELECT S.StudentId, S.StudentName, AVG(credit)
-FROM student S join `subject` sb on S.studentId = sb.subid
+
+SELECT S.StudentId,m.mark, S.StudentName, AVG(m.mark)
+FROM student S 
+join mark m on S.studentid = m.studentid
 GROUP BY S.StudentId, S.StudentName
-order by sb.credit desc
+order by m.mark desc
