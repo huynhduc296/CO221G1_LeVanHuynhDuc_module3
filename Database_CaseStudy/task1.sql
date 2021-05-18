@@ -77,6 +77,12 @@ value
 	(1,4,2,'2019-12-26', '2019-12-30', 200000, 2000000),
 	(1,3,2,'2017-07-12', '2018-07-28', 100000, 10000000);
 
+insert into hop_dong(id_nhan_vien,id_khach_hang,id_dich_vu,ngay_lam_hop_dong, ngay_het_hop_dong, tien_dat_coc,tong_tien)
+value
+	(1,1,2,'2015-10-16', '2015-01-28', 150000, 1000000);
+    insert into hop_dong(id_nhan_vien,id_khach_hang,id_dich_vu,ngay_lam_hop_dong, ngay_het_hop_dong, tien_dat_coc,tong_tien)
+value
+	(1,1,2,'2019-02-16', '2019-03-28', 150000, 1000000);
 insert into dich_vu_di_kem( name_dich_vu_di_kem, gia_ban, don_vi, trang_thai_kha_dung)
 value
 	('Karaoke',100000.00,1, 'Availabale'),
