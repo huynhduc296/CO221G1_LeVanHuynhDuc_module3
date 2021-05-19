@@ -17,6 +17,6 @@ from `subject`
 
 SELECT S.StudentId,m.mark, S.StudentName, AVG(m.mark)
 FROM student S 
-join mark m on S.studentid = m.studentid
+left join mark m on S.studentid = m.studentid
 GROUP BY S.StudentId, S.StudentName
-order by m.mark desc
+order by m.mark desc;
