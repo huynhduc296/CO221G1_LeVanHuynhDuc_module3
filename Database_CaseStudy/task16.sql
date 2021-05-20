@@ -1,7 +1,5 @@
 -- Xóa những Nhân viên chưa từng lập được hợp đồng nào từ năm 2017 đến năm 2019
 
-select *
-from nhan_vien;
 delete
 from nhan_vien
 where id_nhan_vien not in (

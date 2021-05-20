@@ -60,6 +60,7 @@ create table loai_khach_hang(
     email varchar(100),
     dia_chi varchar(200),
     foreign key (id_loai_khach_hang) references loai_khach_hang(id_loai_khach_hang)
+    on delete cascade
  );
     
  create table dich_vu(
@@ -96,6 +97,7 @@ create table hop_dong(
 	foreign key(id_nhan_vien) references nhan_vien(id_nhan_vien),
 	foreign key(id_khach_hang) references khach_hang(id_khach_hang),
 	foreign key(id_dich_vu) references dich_vu(id_dich_vu)
+    on delete cascade
 );
 
  create table hop_dong_chi_tiet(
@@ -105,5 +107,6 @@ create table hop_dong(
     so_luong int,
     foreign key (id_hop_dong) references hop_dong(id_hop_dong),
     foreign key (id_dich_vu_di_kem) references dich_vu_di_kem(id_dich_vu_di_kem)
+    on delete cascade
     );
 
