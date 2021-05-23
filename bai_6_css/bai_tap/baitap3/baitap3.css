@@ -4,9 +4,33 @@
     color: #ffffff;
     padding: 15px;
 }
-
 li{
-    color: red;
+    background-color: rosybrown;
+    color: #dddddd;
     padding: 5px;
+    width: 300px;
+    border-bottom:2px;
+    border-bottom-color: red;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #e9d8f4;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #db7093;
+    font-weight: bold;
+    color: white;
 }
 
