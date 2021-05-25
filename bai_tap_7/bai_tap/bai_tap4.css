@@ -1,0 +1,23 @@
+.menu {
+    background: #667666;
+    text-align: center;
+}
+
+.menu ul {
+    /*text-align: center;*/
+}
+
+.menu ul li {
+    list-style-type: none;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    float: left;
+    padding-right: 20px;
+    border-right: 1px solid black;
+    margin: 10px;
+    font-size: 30px;
+
+}
