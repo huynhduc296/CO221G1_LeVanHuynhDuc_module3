@@ -11,7 +11,7 @@
   <title>$Title$</title>
 </head>
 <body>
-<form action="/calculate" method="post">
+<form action="/calculate" method="get">
   <label>Product Description</label><br>
   <input type="text" name="product"><br><br>
   <label>List Price</label><br>

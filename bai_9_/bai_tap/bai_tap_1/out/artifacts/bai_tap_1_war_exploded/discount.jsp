@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<h1> Kết quả : ${sum1}</h1>
+<from><input type="text"value="<%=request.getAttribute("discountPrice")%>"></from>
 </body>
 </html>

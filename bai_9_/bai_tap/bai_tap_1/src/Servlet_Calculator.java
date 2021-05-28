@@ -9,19 +9,18 @@ import java.io.IOException;
 @WebServlet(name = "Servlet_Calculator",urlPatterns = "/calculate")
 public class Servlet_Calculator extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String product = request.getParameter("product");
         int price = Integer.parseInt(request.getParameter("price"));
         float discount = Float.parseFloat(request.getParameter("discount"));
 
         float discountAmount = price * discount / 100;
         float discountPrice = price - discountAmount;
-
+        request.setAttribute("discountPrice",discountPrice);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("discount.jsp");
-        request.setAttribute("sum1",discountPrice);
         requestDispatcher.forward(request,response);
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
     }
 }
