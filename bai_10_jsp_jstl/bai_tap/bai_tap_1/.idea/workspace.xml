@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="bai_tap_1:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3830b6da-ba4e-4460-b6e4-8ab3c96e694a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/bai_10_jsp_jstl.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_2/bai_tap_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_2/src/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_2/src/CalculatorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bai_tap_1_war_exploded/WEB-INF/classes/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bai_tap_1_war_exploded/WEB-INF/classes/customer_servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bai_tap_1_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bai_tap_1_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bai_tap_1_war_exploded/anh_bt1/anh1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bai_tap_1_war_exploded/anh_bt1/anh2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bai_tap_1_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bai_tap_1_war_exploded/showcustomer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bai_tap_1/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bai_tap_1/customer_servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customer_servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/showcustomer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/showcustomer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/.idea/artifacts/baitap2_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/.idea/libraries/jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/baitap2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/out/artifacts/baitap2_war_exploded/WEB-INF/classes/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/out/artifacts/baitap2_war_exploded/WEB-INF/classes/Calculator_servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/out/artifacts/baitap2_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/out/artifacts/baitap2_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/out/artifacts/baitap2_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/out/production/baitap2/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/out/production/baitap2/Calculator_servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/src/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/src/Calculator_servlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baitap2/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_9_/bai_tap/bai_tap_1/src/Servlet_Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_9_/bai_tap/bai_tap_1/src/ServletCalculator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1tA6xuSm6ubOspVzLklioxg0fit" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../bai_9_/bai_tap/bai_tap_1" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\C0221G1_LeVanHuynhDuc_module3\bai_10_jsp_jstl\bai_tap\bai_tap_1\web" />
+      <recent name="D:\C0221G1_LeVanHuynhDuc_module3\bai_10_jsp_jstl\bai_tap\bai_tap_1\anh_bt1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.21" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.21" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="bai_tap_1:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/bai_tap_1_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_21_bai_tap_1_3" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="bai_tap_1:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3830b6da-ba4e-4460-b6e4-8ab3c96e694a" name="Default Changelist" comment="" />
+      <created>1622199796243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622199796243</updated>
+      <workItem from="1622199799228" duration="729000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1622200524605">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1622200524605" />
+    <state width="905" height="179" key="GridCell.Tab.0.bottom" timestamp="1622200528586">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1622200528586" />
+    <state width="905" height="179" key="GridCell.Tab.0.center" timestamp="1622200528585">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1622200528585" />
+    <state width="905" height="179" key="GridCell.Tab.0.left" timestamp="1622200528585">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1622200528585" />
+    <state width="905" height="179" key="GridCell.Tab.0.right" timestamp="1622200528586">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1622200528586" />
+    <state width="905" height="179" key="GridCell.Tab.1.bottom" timestamp="1622200528588">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1622200528588" />
+    <state width="905" height="179" key="GridCell.Tab.1.center" timestamp="1622200528587">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1622200528587" />
+    <state width="905" height="179" key="GridCell.Tab.1.left" timestamp="1622200528587">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1622200528587" />
+    <state width="905" height="179" key="GridCell.Tab.1.right" timestamp="1622200528587">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1622200528587" />
+    <state width="905" height="179" key="GridCell.Tab.2.bottom" timestamp="1622200528587">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1622200528587" />
+    <state width="905" height="179" key="GridCell.Tab.2.center" timestamp="1622200528586">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1622200528586" />
+    <state width="905" height="179" key="GridCell.Tab.2.left" timestamp="1622200528586">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1622200528586" />
+    <state width="905" height="179" key="GridCell.Tab.2.right" timestamp="1622200528587">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="179" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1622200528587" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1622200072027">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1622200072027" />
+    <state x="65" y="0" key="new project wizard" timestamp="1622199943715">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1622199943715" />
+  </component>
+</project>

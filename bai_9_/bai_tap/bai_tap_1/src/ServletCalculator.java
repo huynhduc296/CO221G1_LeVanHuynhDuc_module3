@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "Servlet_Calculator",urlPatterns = "/calculate")
-public class Servlet_Calculator extends HttpServlet {
+public class ServletCalculator extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }

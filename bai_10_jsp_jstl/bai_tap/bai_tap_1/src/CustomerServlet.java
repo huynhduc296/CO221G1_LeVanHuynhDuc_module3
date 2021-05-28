@@ -8,15 +8,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 @WebServlet(name = "customer_servlet",urlPatterns = {"/customer"})
-public class customer_servlet extends HttpServlet {
-    ArrayList<Customer>customerArrayList=new ArrayList<>();
+public class CustomerServlet extends HttpServlet {
+    ArrayList<Customer> customerArrayList=new ArrayList<>();
 
     @Override
     public void init() throws ServletException {
         customerArrayList.add(new Customer("tung","22/2/1998","Ha Noi","anh_bt1/anh1.jpg"));
         customerArrayList.add(new Customer("Linh","22/2/1999","Thanh Hóa","anh_bt1/anh2.jpg"));
-        customerArrayList.add(new Customer("Hong","22/2/2000","Nghệ An","anh_bt1/anh3.jpg"));
-        customerArrayList.add(new Customer("Huong","22/2/2000","Ha Noi","anh_bt1/anh4.jpg"));
+        customerArrayList.add(new Customer("Hong","22/2/2000","Nghệ An","anh_bt1/anh2.jpg"));
+        customerArrayList.add(new Customer("Huong","22/2/2000","Ha Noi","anh_bt1/anh2.jpg"));
 
     }
 

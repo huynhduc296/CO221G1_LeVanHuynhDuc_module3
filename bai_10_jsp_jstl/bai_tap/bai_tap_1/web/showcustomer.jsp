@@ -1,9 +1,8 @@
-
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
   Date: 27/05/2021
-  Time: 3:05 CH
+  Time: 11:11 CH
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
@@ -27,12 +26,12 @@
         <th>ẢNh</th>
     </tr>
     <c:forEach items="${customer}" var="customer">
-    <tr>
-        <td><c:out value="${customer.name}"></c:out></td>
-        <td><c:out value="${customer.dayOfBirth}"></c:out></td>
-        <td><c:out value="${customer.address}"></c:out></td>
-        <td><img src="<c:out value="${customer.image}"></c:out>"alt=""style="width:50px;height: 50px"></td>
-    </tr>
+        <tr>
+            <td><c:out value="${customer.name}"></c:out></td>
+            <td><c:out value="${customer.dayOfBirth}"></c:out></td>
+            <td><c:out value="${customer.address}"></c:out></td>
+            <td><img src="<c:out value="${customer.image}"></c:out>"alt=""style="width:50px;height: 50px"></td>
+        </tr>
     </c:forEach>
 </table>
 </body>
