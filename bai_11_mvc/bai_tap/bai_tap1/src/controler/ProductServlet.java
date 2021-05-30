@@ -1,6 +1,7 @@
 package controler;
 
 import model.repository.Product;
+import model.service.ProductService;
 import model.service.ProductServiceImpl;
 
 import javax.servlet.RequestDispatcher;
@@ -15,7 +16,7 @@ import java.util.List;
 
 @WebServlet(name = "ProductServlet",urlPatterns ={"/products",""})
 public class ProductServlet extends HttpServlet {
-   ProductServiceImpl productService= new ProductServiceImpl();
+   ProductService productService= new ProductServiceImpl();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         if (action == null) {
@@ -190,7 +191,7 @@ public class ProductServlet extends HttpServlet {
             dispatcher=request.getRequestDispatcher("view/product/error-404.jsp");
         }else {
             request.setAttribute("product",product);
-            dispatcher=request.getRequestDispatcher("view/product/view,jsp");
+            dispatcher=request.getRequestDispatcher("/view/product/view.jsp");
         }
         try {
             dispatcher.forward(request,response);
@@ -205,7 +206,7 @@ public class ProductServlet extends HttpServlet {
         List<Product> productService = this.productService.findAll();
         List<Product> products = new ArrayList<>();
         for(int i=0; i<productService.size(); i++){
-            if (search.contains(productService.get(i).getName())){
+            if ((productService.get(i).getName()).contains(search)){
                 products.add(productService.get(i));
             }
         }
@@ -213,9 +214,7 @@ public class ProductServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/product/search.jsp");
         try {
             dispatcher.forward(request,response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
     }

@@ -29,10 +29,10 @@
         <td>description</td>
         <td>producer</td>
     </tr>
-    <c:forEach items='${requestScope["products"]}' var="product" varStatus="loop">
+    <c:forEach items='${products}' var="product" varStatus="loop">
         <tr>
             <td>${loop.index+1}</td>
-            <td><a href="/products?action=view&id=${customer.getId()}">${product.getName()}</a></td>
+            <td><a href="/products?action=view&id=${product.getId()}">${product.getName()}</a></td>
             <td>${product.getPrice()}</td>
             <td>${product.getDescription()}</td>
             <td>${product.getProducer()}</td>
