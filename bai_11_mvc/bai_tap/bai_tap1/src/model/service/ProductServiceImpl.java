@@ -17,6 +17,8 @@ public class ProductServiceImpl implements ProductService {
         products.put(4, new Product(4, "Lg", 1000, "New box", "China"));
         products.put(5, new Product(5, "Bphone", 1000, "New box", "China"));
         products.put(6, new Product(6, "Xaomi", 1000, "New box", "China"));
+        products.put(7, new Product(7, "XaXa", 2000, "New box", "China"));
+        products.put(8, new Product(8, "XiXi", 3000, "New box", "China"));
     }
 
     @Override

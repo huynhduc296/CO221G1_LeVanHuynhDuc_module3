@@ -205,7 +205,7 @@ public class ProductServlet extends HttpServlet {
         List<Product> productService = this.productService.findAll();
         List<Product> products = new ArrayList<>();
         for(int i=0; i<productService.size(); i++){
-            if (search.equals(productService.get(i).getName())){
+            if (search.contains(productService.get(i).getName())){
                 products.add(productService.get(i));
             }
         }
