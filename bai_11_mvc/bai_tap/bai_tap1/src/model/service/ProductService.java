@@ -1,6 +1,6 @@
 package model.service;
 
-import model.repository.Product;
+import model.Product;
 
 import java.util.List;
 

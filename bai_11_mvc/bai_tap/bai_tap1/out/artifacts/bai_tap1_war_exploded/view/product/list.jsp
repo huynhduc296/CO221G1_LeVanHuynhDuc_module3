@@ -32,17 +32,16 @@
     <c:forEach items='${products}' var="product" varStatus="loop">
         <tr>
             <td>${loop.index+1}</td>
-            <td><a href="/products?action=view&id=${product.getId()}">${product.getName()}</a></td>
-            <td>${product.getPrice()}</td>
-            <td>${product.getDescription()}</td>
-            <td>${product.getProducer()}</td>
-            <td><a href="/products?action=edit&id=${product.getId()}">edit</a></td>
-            <td><a href="/products?action=delete&id=${product.getId()}">delete</a></td>
+            <td><a href="/products?action=view&id=${product.id}">${product.name}</a></td>
+            <td>${product.price}</td>
+            <td>${product.description}</td>
+            <td>${product.producer}</td>
+            <td><a href="/products?action=edit&id=${product.id}">edit</a></td>
+            <td><a href="/products?action=delete&id=${product.id}">delete</a></td>
         </tr>
     </c:forEach>
 </table>
 <div>
-    <label>Tìm Kiếm: </label><br/>
     <form action="/products">
         <div class="form-group row">
             <input class="form-control-plaintext" type="text" placeholder="Tìm Kiếm theo Tên" name="searchName">

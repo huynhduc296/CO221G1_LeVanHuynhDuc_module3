@@ -18,20 +18,20 @@
 <table>
     <tr>
         <td>Name: </td>
-        <td>${product.getName()}</td>
+        <td>${product.name}</td>
     </tr>
     <tr>
     <tr>
         <td>Price: </td>
-        <td>${product.getPrice()}"</td>
+        <td>${product.price}"</td>
     </tr>
     <tr>
         <td>Description: </td>
-        <td>${product.getDescription()}"</td>
+        <td>${product.description}"</td>
     </tr>
     <tr>
         <td>Producer: </td>
-        <td>${product.getProducer()}"</td>
+        <td>${product.producer}"</td>
     </tr>
 </table>
 </body>

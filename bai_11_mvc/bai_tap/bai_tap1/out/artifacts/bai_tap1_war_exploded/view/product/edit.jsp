@@ -27,19 +27,19 @@
         <table>
             <tr>
                 <td>Name: </td>
-                <td><input type="text" name="name" id="name" value="${product.getName()}"></td>
+                <td><input type="text" name="name" id="name" value="${product.name}"></td>
             </tr>
             <tr>
                 <td>Price: </td>
-                <td><input type="text" name="price" id="price" value="${product.getPrice()}"></td>
+                <td><input type="text" name="price" id="price" value="${product.price}"></td>
             </tr>
             <tr>
                 <td>Description: </td>
-                <td><input type="text" name="description" id="description"value="${product.getDescription()}"></td>
+                <td><input type="text" name="description" id="description"value="${product.description}"></td>
             </tr>
             <tr>
                 <td>Producer: </td>
-                <td><input type="text" name="producer" id="producer"value="${product.getProducer()}"></td>
+                <td><input type="text" name="producer" id="producer"value="${product.producer}"></td>
             </tr>
             <tr>
                 <td></td>
