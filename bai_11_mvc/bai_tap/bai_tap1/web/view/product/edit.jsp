@@ -21,7 +21,7 @@
 <p>
     <a href="/products">Back to products list</a>
 </p>
-<form method="post">
+<form action="/products?action=edit&id=${product.id}" method="post">
     <fieldset>
         <legend>Product information</legend>
         <table>

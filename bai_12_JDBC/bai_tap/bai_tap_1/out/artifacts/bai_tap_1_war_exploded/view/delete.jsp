@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 29/05/2021
-  Time: 12:33 SA
+  Date: 01/06/2021
+  Time: 3:34 CH
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -19,31 +19,27 @@
     </c:if>
 </p>
 <p>
-    <a href="/products">Back to products list</a>
+    <a href="/users">Back to list</a>
 </p>
-<form action="/products?action=edit&id=${product.id}" method="post">
+<form method="post">
     <fieldset>
         <legend>Product information</legend>
         <table>
             <tr>
                 <td>Name: </td>
-                <td>${product.name}</td>
+                <td>${user.name}</td>
             </tr>
             <tr>
-                <td>Price: </td>
-                <td>${product.price}"</td>
+                <td>Email: </td>
+                <td>${user.email}</td>
             </tr>
             <tr>
-                <td>Description: </td>
-                <td>${product.description}"</td>
-            </tr>
-            <tr>
-                <td>Producer: </td>
-                <td>${product.producer}"</td>
+                <td>country: </td>
+                <td>${user.country}</td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Delete product"></td>
+                <td><input type="submit" value="Delete User"></td>
             </tr>
         </table>
     </fieldset>
