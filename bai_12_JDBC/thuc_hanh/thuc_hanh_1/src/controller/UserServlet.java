@@ -1,6 +1,6 @@
 package controller;
 
-import model.User;
+import bean.User;
 import model.repository.UserDAO;
 
 import javax.servlet.RequestDispatcher;

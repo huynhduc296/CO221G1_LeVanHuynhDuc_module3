@@ -1,6 +1,6 @@
 package model.repository;
 
-import model.User;
+import model.Bean.User;
 
 import java.util.List;
 

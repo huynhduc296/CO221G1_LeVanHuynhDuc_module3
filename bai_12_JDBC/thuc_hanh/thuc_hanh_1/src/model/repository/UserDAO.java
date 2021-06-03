@@ -1,6 +1,6 @@
 package model.repository;
 
-import model.User;
+import bean.User;
 
 import java.sql.*;
 import java.util.ArrayList;

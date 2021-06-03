@@ -17,7 +17,6 @@
 <p>
     <a href="/users">Back to list</a>
 </p>
-</center>
 <div>
     <table border="1">
         <caption><h2>List of Users</h2></caption>

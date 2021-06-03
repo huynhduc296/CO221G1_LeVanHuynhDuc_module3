@@ -1,10 +1,9 @@
 package model.service;
 
-import model.User;
+import model.Bean.User;
 import model.repository.UserRepository;
 import model.repository.UserRepositoryImpl;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {

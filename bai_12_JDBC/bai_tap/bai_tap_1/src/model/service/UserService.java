@@ -1,5 +1,5 @@
 package model.service;
-import model.User;
+import model.Bean.User;
 import java.util.List;
 
 public interface UserService {

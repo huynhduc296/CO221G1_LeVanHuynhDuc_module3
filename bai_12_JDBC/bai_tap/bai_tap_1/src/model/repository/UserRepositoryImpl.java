@@ -1,6 +1,6 @@
 package model.repository;
 
-import model.User;
+import model.Bean.User;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.List;
 public class UserRepositoryImpl implements UserRepository {
     private final String FIND_ALL = "select * from users";
 
-    private final String SELECT_STUDENT_BY_ID=  ("update users\n" +
+    private final String SELECT_USER_BY_ID=  ("update users\n" +
             "set `name` = ? , email = ? , country = ?\n" +
             "where id = ?");
 
@@ -52,7 +52,7 @@ public class UserRepositoryImpl implements UserRepository {
     public User findById(int id) {
         User user =new User();
         try {
-            PreparedStatement preparedStatement=baseRepository.connectDataBase().prepareStatement(SELECT_STUDENT_BY_ID);
+            PreparedStatement preparedStatement=baseRepository.connectDataBase().prepareStatement(SELECT_USER_BY_ID);
             preparedStatement.setInt(1,id);
             ResultSet resultSet=preparedStatement.executeQuery();
         if(resultSet.next()){
@@ -69,7 +69,7 @@ public class UserRepositoryImpl implements UserRepository {
     @Override
     public void update(int id, User user) {
            try {
-               PreparedStatement preparedStatement=baseRepository.connectDataBase().prepareStatement(SELECT_STUDENT_BY_ID);
+               PreparedStatement preparedStatement=baseRepository.connectDataBase().prepareStatement(SELECT_USER_BY_ID);
                preparedStatement.setString(1,user.getName());
                preparedStatement.setString(2,user.getEmail());
                preparedStatement.setString(3,user.getCountry());
