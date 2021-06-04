@@ -1,5 +1,6 @@
 create database if not exists database_furama;
 use database_furama;
+
 create table Positions(
 	position_id int primary key auto_increment,
     position_name varchar(50)
@@ -7,7 +8,7 @@ create table Positions(
     
 create table Employee_level(
 	employee_level_id int primary key auto_increment,
-	employess_level_name varchar(15)
+	employess_level varchar(15)
 );
 
 create table Department(
@@ -28,12 +29,12 @@ create table Servicetype(
     
 create table Employees(
 	employee_id int auto_increment primary key,
-    Employee_name varchar(40) not null,
+    Employee_name varchar(40),
     position_id int ,
     employee_level_id int,
     department_id int ,
     date_of_birth date,
-    id_card_number varchar(10),
+    id_card_number varchar(10) unique,
     salary double,
     phone_number varchar(10),
     email varchar(100),
@@ -41,7 +42,6 @@ create table Employees(
 	foreign key(position_id) references Positions(position_id),
 	foreign key(employee_level_id) references Employee_level(employee_level_id),
 	foreign key(department_id) references Department(department_id)
-     on delete cascade
 );
 
 create table CustomerType(
@@ -59,7 +59,6 @@ create table CustomerType(
     email varchar(100),
     address varchar(200),
     foreign key (customer_type_id) references CustomerType(customer_type_id)
-     on delete cascade
  );
     
  create table Services(
@@ -74,7 +73,6 @@ create table CustomerType(
     availability_status varchar(50),
     foreign key (rental_type_id) references RentalType(rental_type_id),
     foreign key (service_type_id) references ServiceType(service_type_id)
-     on delete cascade
 );
 
  create table AccompaniedService(
@@ -97,16 +95,14 @@ create table Contracts(
 	foreign key(employee_id) references Employees(employee_id),
 	foreign key(customer_id) references Customers(customer_id),
 	foreign key(service_id) references Services(service_id)
-       on delete cascade
 );
 
 
  create table ContractDetail(
+	contract_detail_id int auto_increment primary key,
     contract_id int,
     accompanied_service_id int,
-    primary key (contract_id,accompanied_service_id),
     amount int,
     foreign key (contract_id) references Contracts(contract_id),
     foreign key (accompanied_service_id) references AccompaniedService(accompanied_service_id)
-    on delete cascade
-    );
+ );

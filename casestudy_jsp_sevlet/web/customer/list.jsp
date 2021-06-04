@@ -16,27 +16,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container" style="width: 80%">
-    <h1>Product Management</h1>
-    <p>
-        <a href="/products?action=create">Create new product</a>
-    </p>
+<div>
+    <div style="margin-left: 5%">
+        <h1>Customer Management</h1>
+        <p>
+            <a href="/users?action=add">add new Customer</a>
+        </p>
+        <p>
+            <a href="/users?action=sort">sort by name</a>
+        </p>
+    </div>
+</div>
+<div class="container" style="width: 80%" >
     <table class="table table-dark">
         <tr>
-            <td>NoOfOder</td>
-            <td>ServiceName</td>
-            <td>ServiceArea</td>
-            <td>ServiceCost</td>
-            <td>ServiceMaxPeople</td>
-            <td>ServiceType</td>
-            <td>ServiceName</td>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>phoneNumber</th>
+            <th>address</th>
+            <th>Actions</th>
         </tr>
-
+        <c:forEach var="customer" items="${listCustomers}">
+            <tr>
+                <td><c:out value="${customer.id}"/></td>
+                <td><c:out value="${customer.name}"/></td>
+                <td><c:out value="${customer.email}"/></td>
+                <td><c:out value="${customer.phoneNumber}"/></td>
+                <td><c:out value="${customer.address}"/></td>
+                <td><a href="/users?action=edit&id=${customer.id}">edit</a></td>
+                <td><a href="/users?action=delete&id=${customer.id}">delete</a></td>
+             </tr>
+        </c:forEach>
     </table>
     <div>
-        <form action="/products">
+        <form action="/users">
             <div class="form-group row">
-                <input class="form-control-plaintext" type="text" placeholder="Tìm Kiếm theo Tên" name="searchName">
+                <input class="form-control-plaintext" type="text" placeholder="Tìm kiếm theo country" name="search">
                 <br>
                 <input type = "submit" id = "submit" name="action" value = "search"/>
             </div>
