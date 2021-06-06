@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 30/05/2021
-  Time: 11:10 CH
+  Date: 04/06/2021
+  Time: 8:32 CH
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -20,10 +20,10 @@
     <div style="margin-left: 5%">
         <h1>Customer Management</h1>
         <p>
-            <a href="/customer?action=add">add new Customer</a>
+            <a href="/employee?action=add">add new Employee</a>
         </p>
         <p>
-            <a href="/customer?action=sort">sort by name</a>
+            <a href="/employee?action=sort">sort by name</a>
         </p>
     </div>
 </div>
@@ -32,29 +32,28 @@
         <tr>
             <td>NoOfOder</td>
             <th>Name</th>
-            <th>Birthday</th>
-            <th>Gender</th>
-            <th>Email</th>
-            <th>phoneNumber</th>
+            <th>birthday</th>
+            <th>levelId</th>
+            <th>email</th>
+            <th>phone</th>
             <th>address</th>
-            <th>Actions</th>
         </tr>
-        <c:forEach items='${customer}' var="customer" varStatus="loop">
+        <c:forEach items='${employee}' var="employee" varStatus="loop">
             <tr>
                 <td>${loop.index+1}</td>
-                <td>${customer.name}</td>
-                <td>${customer.birthday}</td>
-                <td>${customer.gender}</td>
-                <td>${customer.email}</td>
-                <td>${customer.phone}</td>
-                <td>${customer.address}</td>
-                <td><a href="/customer?action=edit&id=${customer.id}">edit</a></td>
-                <td><a href="/customer?action=delete&id=${customer.id}">delete</a></td>
-             </tr>
+                <td>${employee.name}</td>
+                <td>${employee.birthday}</td>
+                <td>${employee.levelId}</td>
+                <td>${employee.email}</td>
+                <td>${employee.phone}</td>
+                <td>${employee.address}</td>
+                <td><a href="/customer?action=edit&id=${employee.id}">edit</a></td>
+                <td><a href="/customer?action=delete&id=${employee.id}">delete</a></td>
+            </tr>
         </c:forEach>
     </table>
     <div>
-        <form action="/customer">
+        <form action="/employee">
             <div class="form-group row">
                 <input class="form-control-plaintext" type="text" placeholder="Tìm kiếm theo country" name="search">
                 <br>
@@ -65,4 +64,3 @@
 </div>
 </body>
 </html>
-

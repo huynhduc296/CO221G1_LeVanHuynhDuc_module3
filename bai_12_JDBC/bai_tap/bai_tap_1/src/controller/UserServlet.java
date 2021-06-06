@@ -119,7 +119,6 @@ public class UserServlet extends HttpServlet {
             user.setCountry(country);
             this.userService.update(id,user);
             request.setAttribute("user",user);
-            request.setAttribute("message","New user was created");
             dispatcher=request.getRequestDispatcher("view/edit.jsp");
             try {
                 dispatcher.forward(request,response);

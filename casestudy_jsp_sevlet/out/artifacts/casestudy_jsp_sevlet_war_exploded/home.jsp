@@ -31,10 +31,10 @@
                     <a class="nav-link" href="home.jsp">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Employee <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/employee">Employee <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="?action=customers">Customer <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/customer">Customer <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Service <span class="sr-only">(current)</span></a>

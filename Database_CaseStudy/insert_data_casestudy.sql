@@ -36,17 +36,17 @@ value
 	('Silver'),
 	('Member');
     
- insert into customers(customer_type_id,full_name, date_of_birth, id_card_number, phone_number, email ,address)
+ insert into customers(customer_code,customer_type_id,full_name, date_of_birth,gender,id_card_number, phone_number, email ,address)
  value
-	(1,'Joan', '1977-06-20', '208872125', '0333576575', 'joan@gmail.com', 'Spanish' ),
-	(2,'Take Uchi Satoru', '1971-01-19', '208876546', '090765659', 'take_uchi@gmail.com', 'Japan' ),
-	(2,'Ty Colin', '1975-11-28', '207776517', '091767658', 'ty_colin@gmail.com', 'Us' ),
-	(3,'Nguyen Minh Phuc', '1984-08-19', '209971242', '0333765651', 'phuc_nguyen@gmail.com', 'Ha Noi' ),
-	(4,'Joan', '1920-11-19', '208877611', '0345176510', 'ha_nguyen@gmail.com', 'Quang Tri' ),
-	(1,'Nguyen Hong Dang', '1988-12-30', '208845540', '0906588335', 'dang_nguyen@gmail.com', 'Ha Noi' ),
-	(2,'Lam Ba Dat', '1987-07-29', '212376541', '0944456056', 'ba_dat@gmail.com', 'Sai Gon' ),
-	(1,'Cao Van Minh', '1992-10-17', '208856459','0333765651', 'minh_cao@gmail.com', 'Cao Bang' ),
-	(3,'Nguyen Dang Khoi', '1998-08-24', '218846561', '0917063678', 'khoi_nguyen@gmail.com', 'Da Nang' );
+	(1,2,'Joan', '1977-06-20','male', '208872125', '0333576575', 'joan@gmail.com', 'Spanish' ),
+	(2,3,'Take Uchi Satoru', '1971-01-19','male', '208876546', '090765659', 'take_uchi@gmail.com', 'Japan' ),
+	(2,4,'Ty Colin', '1975-11-28','male', '207776517', '091767658', 'ty_colin@gmail.com', 'Us' ),
+	(3,2,'Nguyen Minh Phuc', '1984-08-19','male', '209971242', '0333765651', 'phuc_nguyen@gmail.com', 'Ha Noi' ),
+	(4,1,'Joan', '1920-11-19', '208877611','male', '0345176510', 'ha_nguyen@gmail.com', 'Quang Tri' ),
+	(1,3,'Nguyen Hong Dang', '1988-12-30','male', '208845540', '0906588335', 'dang_nguyen@gmail.com', 'Ha Noi' ),
+	(2,2,'Lam Ba Dat', '1987-07-29','female', '212376541', '0944456056', 'ba_dat@gmail.com', 'Sai Gon' ),
+	(1,1,'Cao Van Minh', '1992-10-17','female', '208856459','0333765651', 'minh_cao@gmail.com', 'Cao Bang' ),
+	(3,4,'Nguyen Dang Khoi', '1998-08-24','female', '218846561', '0917063678', 'khoi_nguyen@gmail.com', 'Da Nang' );
     
 
 insert into Servicetype(service_type_name)

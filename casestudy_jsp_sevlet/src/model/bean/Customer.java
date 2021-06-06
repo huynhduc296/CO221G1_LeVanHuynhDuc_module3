@@ -1,13 +1,13 @@
 package model.bean;
 
 public class Customer {
-    private String id;
+    private int id;
+    private int code;
     private int typeId;
-    private String typeName;
     private String name;
     private String birthday;
     private String gender;
-    private String idCard ;
+    private String idCard;
     private String phone;
     private String email;
     private String address;
@@ -15,24 +15,45 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(String id, int typeId, String typeName, String name, String birthday, String idCard, String phone, String email, String address) {
+    public Customer(int id, int code, int typeId, String name, String birthday, String gender, String idCard, String phone, String email, String address) {
         this.id = id;
+        this.code = code;
         this.typeId = typeId;
-        this.typeName = typeName;
         this.name = name;
         this.birthday = birthday;
+        this.gender = gender;
         this.idCard = idCard;
         this.phone = phone;
         this.email = email;
         this.address = address;
     }
 
-    public String getId() {
+    public Customer(int code, int typeId, String name, String birthday, String gender, String idCard, String phone, String email, String address) {
+        this.code = code;
+        this.typeId = typeId;
+        this.name = name;
+        this.birthday = birthday;
+        this.gender = gender;
+        this.idCard = idCard;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
     }
 
     public int getTypeId() {
@@ -41,14 +62,6 @@ public class Customer {
 
     public void setTypeId(int typeId) {
         this.typeId = typeId;
-    }
-
-    public String getTypeName() {
-        return typeName;
-    }
-
-    public void setTypeName(String typeName) {
-        this.typeName = typeName;
     }
 
     public String getName() {
@@ -67,6 +80,13 @@ public class Customer {
         this.birthday = birthday;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
     public String getIdCard() {
         return idCard;

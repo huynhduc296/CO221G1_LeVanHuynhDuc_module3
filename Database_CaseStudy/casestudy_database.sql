@@ -51,9 +51,11 @@ create table CustomerType(
 
  create table Customers(
 	customer_id int auto_increment primary key,
+    customer_code int,
     customer_type_id int,
     full_name varchar(50),
     date_of_birth date,
+    gender varchar(50),
     id_card_number varchar(10),
     phone_number varchar(10),
     email varchar(100),
@@ -61,7 +63,6 @@ create table CustomerType(
     foreign key (customer_type_id) references CustomerType(customer_type_id)
      on delete cascade
  );
-    
  create table Services(
 	service_id int auto_increment primary key,
     service_name varchar(50),

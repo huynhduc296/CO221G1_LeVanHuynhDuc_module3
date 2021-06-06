@@ -20,37 +20,41 @@
     <div style="margin-left: 5%">
         <h1>Customer Management</h1>
         <p>
-            <a href="/users?action=add">add new Customer</a>
+            <a href="/customer?action=add">add new Customer</a>
         </p>
         <p>
-            <a href="/users?action=sort">sort by name</a>
+            <a href="/customer?action=sort">sort by name</a>
         </p>
     </div>
 </div>
 <div class="container" style="width: 80%" >
     <table class="table table-dark">
         <tr>
-            <th>ID</th>
+            <td>NoOfOder</td>
             <th>Name</th>
+            <th>Birthday</th>
+            <th>Gender</th>
             <th>Email</th>
             <th>phoneNumber</th>
             <th>address</th>
             <th>Actions</th>
         </tr>
-        <c:forEach var="customer" items="${listCustomers}">
+        <c:forEach items='${customer}' var="customer" varStatus="loop">
             <tr>
-                <td><c:out value="${customer.id}"/></td>
-                <td><c:out value="${customer.name}"/></td>
-                <td><c:out value="${customer.email}"/></td>
-                <td><c:out value="${customer.phoneNumber}"/></td>
-                <td><c:out value="${customer.address}"/></td>
-                <td><a href="/users?action=edit&id=${customer.id}">edit</a></td>
-                <td><a href="/users?action=delete&id=${customer.id}">delete</a></td>
+                <td>${loop.index+1}</td>
+                <td>${customer.name}</td>
+                <td>${customer.birthday}</td>
+                <td>${customer.gender}</td>
+                <td>${customer.email}</td>
+                <td>${customer.phone}</td>
+                <td>${customer.address}</td>
+                <td><a href="/customer?action=edit&id=${customer.id}">edit</a></td>
+                <td><a href="/customer?action=delete&id=${customer.id}">delete</a></td>
              </tr>
         </c:forEach>
     </table>
     <div>
-        <form action="/users">
+        <form action="/customer">
             <div class="form-group row">
                 <input class="form-control-plaintext" type="text" placeholder="Tìm kiếm theo country" name="search">
                 <br>
