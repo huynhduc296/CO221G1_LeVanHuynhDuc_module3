@@ -1,8 +1,11 @@
 package controller;
 
 import model.bean.Customer;
+import model.bean.CustomerType;
 import model.service.CustomerService;
 import model.service.CustomerServiceImpl;
+import model.service.customertype.CustomerTypeServicer;
+import model.service.customertype.CustomerTyperSevicerImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,6 +19,7 @@ import java.util.List;
 @WebServlet(name = "CustomerServlet",urlPatterns = "/customer")
 public class CustomerServlet extends HttpServlet {
     CustomerService customerService=new CustomerServiceImpl();
+    CustomerTypeServicer customerTypeServicer=new CustomerTyperSevicerImpl();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         if (action == null) {
@@ -96,7 +100,9 @@ public class CustomerServlet extends HttpServlet {
     }
 
     public void showFormAdd(HttpServletRequest request,HttpServletResponse response){
+        List<CustomerType> customerTypeList=customerTypeServicer.findByAll();
         RequestDispatcher requestDispatcher=request.getRequestDispatcher("customer/create.jsp");
+        request.setAttribute("customerTypeList",customerTypeList);
         try {
             requestDispatcher.forward(request,response);
         } catch (ServletException | IOException e) {
@@ -105,6 +111,11 @@ public class CustomerServlet extends HttpServlet {
     }
 
     public void showFormEdit(HttpServletRequest request,HttpServletResponse response){
+        int id=Integer.parseInt(request.getParameter("id"));
+        Customer customer=customerService.findById(id);
+        List<CustomerType>customerType=customerTypeServicer.findByAll();
+        request.setAttribute("customer",customer);
+        request.setAttribute("customerTypeList",customerType);
         RequestDispatcher requestDispatcher=request.getRequestDispatcher("customer/edit.jsp");
         try {
             requestDispatcher.forward(request,response);
@@ -112,6 +123,7 @@ public class CustomerServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
     public void updateCustomer(HttpServletRequest request, HttpServletResponse response){
         int id =Integer.parseInt(request.getParameter("id"));
         int code =Integer.parseInt(request.getParameter("code"));

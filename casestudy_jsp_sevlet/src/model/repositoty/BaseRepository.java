@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class BaseRepository {
-    Connection connectDataBase() {
+   public Connection connectDataBase() {
         final String URL = "jdbc:mysql://localhost:3306/database_furama?useSSL=false";
         final String USER = "root";
         final String PASSWORD = "12345678";

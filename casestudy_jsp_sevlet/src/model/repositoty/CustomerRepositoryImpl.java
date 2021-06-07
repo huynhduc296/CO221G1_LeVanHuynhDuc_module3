@@ -9,15 +9,22 @@ import java.util.List;
 public class CustomerRepositoryImpl implements CustomerRepository {
     private final String FIND_ALL = "select * from Customers";
 
+    private static final String FIND_BY_ID = "select * from customers where customer_id = ?;";
+
     private final String SELECT_CUSTOMER_BY_ID=  ("update Customers\n" +
             "set customer_code = ? ,customer_type_id = ? , full_name = ? , date_of_birth = ? ,gender = ? , id_card_number = ?,phone_number = ? , email = ? , address = ? \n" +
             "where customer_id = ?");
+    private static final String UPDATE = "UPDATE customers t SET " +
+            "t.customer_code=?, t.customer_type_id=?, t.full_name = ?, t.date_of_birth = ?, " +
+            " t.id_card_number = ?, t.gender = ?, t.phone_number = ?, " +
+            " t.email = ?, t.address = ? WHERE t.customer_id = ? ";
 
     private final  String ADD_CUSTOMER=(" insert into customers(customer_code,customer_type_id,full_name, date_of_birth,gender, id_card_number, phone_number, email ,address)\n" +
-            "values (?,?,?,?,?,?,?)");
+            "values (?,?,?,?,?,?,?,?,?)");
 
     private final String DELETE_CUSTOMER=("delete from customers\n" +
             "where customer_id = ?");
+
 
     private final String SORT_NAME=("select *\n" +
             "from customers\n" +
@@ -59,7 +66,7 @@ public class CustomerRepositoryImpl implements CustomerRepository {
     public Customer findById(int id) {
        Customer customer=new Customer();
        try {
-           PreparedStatement preparedStatement=baseRepository.connectDataBase().prepareStatement(SELECT_CUSTOMER_BY_ID);
+           PreparedStatement preparedStatement=baseRepository.connectDataBase().prepareStatement(FIND_BY_ID);
            preparedStatement.setInt(1,id);
             ResultSet resultSet=preparedStatement.executeQuery();
             if(resultSet.next()){
@@ -83,7 +90,7 @@ public class CustomerRepositoryImpl implements CustomerRepository {
     @Override
     public void update(int id, Customer customer) {
         try {
-                PreparedStatement preparedStatement=baseRepository.connectDataBase().prepareStatement(SELECT_CUSTOMER_BY_ID);
+                PreparedStatement preparedStatement=baseRepository.connectDataBase().prepareStatement(UPDATE);
             preparedStatement.setInt(1,customer.getCode());
             preparedStatement.setInt(2,customer.getTypeId());
             preparedStatement.setString(3,customer.getName());

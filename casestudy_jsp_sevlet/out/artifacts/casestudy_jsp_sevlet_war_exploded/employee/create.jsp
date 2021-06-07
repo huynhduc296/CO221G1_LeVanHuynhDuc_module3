@@ -1,11 +1,10 @@
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 03/06/2021
-  Time: 5:18 CH
+  Date: 05/06/2021
+  Time: 1:48 CH
   To change this template use File | Settings | File Templates.
 --%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -19,7 +18,7 @@
 <div class="header">
     <h1>User Management</h1>
     <h2>
-        <a href="customer?action=customer">Back to list</a>
+        <a href="employee?action=employee">Back to list</a>
     </h2>
 </div>
 
@@ -31,57 +30,55 @@
                 <h2>Add New Customer</h2>
             </caption>
             <tr>
-                <th> CustomerCode:</th>
-                <td>
-                    <input type="text" name="code" id="code" />
-                </td>
-            </tr>
-            <tr>
-                <th>idTypeCustomers:</th>
-                <td>
-                    <select name="typeId" id="typeId">
-                        <c:forEach items='${customerTypeList}' var="customerTypes">
-                        <option value=${customerTypes.typeId}>${customerTypes.customerTypeName}</option>
-                        </c:forEach>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <th> Name:</th>
+                <th> EmployeeName:</th>
                 <td>
                     <input type="text" name="name" id="name" />
                 </td>
             </tr>
             <tr>
-                <th>birthday:</th>
+                <th>PositionId:</th>
+                <td>
+                    <input type="text" name="positionId" id="positionId" />
+                </td>
+            </tr>
+            <tr>
+                <th> Employee_level_id:</th>
+                <td>
+                    <input type="text" name="levelId" id="levelId" />
+                </td>
+            </tr>
+            <tr>
+                <th>department_id:</th>
+                <td>
+                    <input type="text" name="departmentId" id="departmentId" />
+                </td>
+            </tr>
+            <tr>
+                <th>date_of_birth:</th>
                 <td>
                     <input type="text" name="birthday" id="birthday" />
                 </td>
             </tr>
             <tr>
-                <th>
-                    Gender
-                </th>
+                <th>idCard:</th>
                 <td>
-                    <input type="radio" name="gender" value="male"> Male<br>
-                    <input type="radio" name="gender" value="female"> Female<br>
-                    <input type="radio" name="gender" value="gay"> Other
+                    <input type="text" name="idCard" id="idCard"/>
                 </td>
             </tr>
             <tr>
-                <th>card:</th>
+                <th>salary:</th>
                 <td>
-                    <input type="text" name="idCard" id="idCard" />
+                    <input type="text" name="salary" id="salary" />
                 </td>
             </tr>
             <tr>
-                <th>phone number:</th>
+                <th>phone_number:</th>
                 <td>
-                    <input type="text" name="phone" id="phone"/>
+                    <input type="text" name="phone_number" id="phone_number" />
                 </td>
             </tr>
             <tr>
-                <th>Email:</th>
+                <th>email:</th>
                 <td>
                     <input type="text" name="email" id="email" />
                 </td>

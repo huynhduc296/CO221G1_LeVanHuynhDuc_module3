@@ -5,6 +5,7 @@
   Time: 5:18 CH
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -30,15 +31,19 @@
                 <h2>Add New Customer</h2>
             </caption>
             <tr>
-                <th>idTypeCustomers:</th>
-                <td>
-                    <input type="text" name="type_id" id="type_id" />
-                </td>
-            </tr>
-            <tr>
                 <th> CustomerCode:</th>
                 <td>
                     <input type="text" name="code" id="code" />
+                </td>
+            </tr>
+            <tr>
+                <th>idTypeCustomers:</th>
+                <td>
+                    <select name="typeId" id="typeId">
+                        <c:forEach items='${customerTypeList}' var="customerTypes">
+                        <option value=${customerTypes.typeId}>${customerTypes.customerTypeName}</option>
+                        </c:forEach>
+                    </select>
                 </td>
             </tr>
             <tr>
@@ -66,7 +71,7 @@
             <tr>
                 <th>card:</th>
                 <td>
-                    <input type="text" name="card" id="card" />
+                    <input type="text" name="idCard" id="idCard" />
                 </td>
             </tr>
             <tr>

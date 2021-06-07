@@ -30,11 +30,17 @@
             </caption>
             <tr>
                 <th>Customer code id:</th>
-                <td><input type="text" name="code" size="45" value='${customer.code}'></td>
+                <td><input type="text" name="code" size="45" value="${customer.code}"></td>
             </tr>
             <tr>
-                <th>Customer type id:</th>
-                <td><input type="text" name="typeId" size="45" value='${customer.typeId}'></td>
+                <th>idTypeCustomers:</th>
+                <td>
+                    <select name="typeId" id="typeId">
+                        <c:forEach items='${customerTypeList}' var="customerTypes">
+                            <option value=${customerTypes.typeId}>${customerTypes.customerTypeName}</option>
+                        </c:forEach>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <th>Name:</th>

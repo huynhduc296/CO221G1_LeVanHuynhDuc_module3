@@ -10,6 +10,8 @@ import java.util.List;
 public class EmployeeRepositoryImpl implements EmployeeRepository{
     private final String FIND_ALL = "select * from employees";
 
+    private static final String FIND_BY_ID = "select * from employee where employee_id = ?;";
+
     private final String SELECT_EMPLOYEE_BY_ID=  ("update employees\n" +
             "set Employee_name = ? , position_id = ? , employee_level_id = ?,department_id = ? , date_of_birth = ? , id_card_number = ?, salary = ?, phone_number = ?, email = ?, address = ? \n" +
             "where employee_id = ?");
@@ -52,7 +54,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository{
     public Employee findById(int id) {
         Employee employee=new Employee();
         try {
-            PreparedStatement preparedStatement=baseRepository.connectDataBase().prepareStatement(SELECT_EMPLOYEE_BY_ID);
+            PreparedStatement preparedStatement=baseRepository.connectDataBase().prepareStatement(FIND_BY_ID);
             preparedStatement.setInt(1,id);
             ResultSet resultSet=preparedStatement.executeQuery();
             if(resultSet.next()){
